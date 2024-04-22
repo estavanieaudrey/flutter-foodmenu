@@ -37,7 +37,7 @@ class seeAll_pop_square extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 10),
+              padding: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
               child: Text(
                 subtext,
                 textAlign: TextAlign.center,

@@ -29,35 +29,11 @@ class _profile extends State<profile> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue,
-      child: Center(
-        child: Column(
-          children: [
-            Text(_currentValue.toString()),
-            Slider(
-              value: _currentValue,
-              min: 0,
-              max: 10,
-              //divisions: 10,
-              activeColor: Colors.blue,
-              inactiveColor: Colors.black,
-              thumbColor: Colors.red,
-              onChanged: (value) {
-                setState(() {
-                  _currentValue = value;
-                });
-              },
-            ),
-            MaterialButton(
-              onPressed: () {
-                _showDatePicker();
-              },
-              color: Colors.blue,
-              child: const Text(
-                'Show Date Picker',
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ],
+      child: const Center(
+        child: Text("This is profile page", 
+        style: TextStyle(
+          fontSize: 20
+        ),
         ),
       ),
     );

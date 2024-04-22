@@ -96,10 +96,19 @@ class listView_deals extends StatelessWidget {
               ),
             ),
             ),
-            Text(story['title']!,
-                style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-            Text(story['description']!),
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(story['title']!,
+                  style:
+                      const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Text(story['description']!,
+              style:
+                      const TextStyle(fontSize: 12,
+                      )),
+            ),
           ],
         ),
       ),

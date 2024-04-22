@@ -13,6 +13,13 @@ class _discovery extends State<Discovery> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.yellow,
+      child: const Center(
+        child: Text("This is discovery page", 
+        style: TextStyle(
+          fontSize: 20
+        ),
+        ),
+      ),
       
     );
   }

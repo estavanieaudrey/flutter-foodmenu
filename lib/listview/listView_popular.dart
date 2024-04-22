@@ -73,7 +73,7 @@ class listView_popular extends StatelessWidget {
             child: SizedBox(
               height: 200,
               child: ListView.separated(
-                padding: const EdgeInsets.all(3),
+                padding: const EdgeInsets.all(4),
                 itemCount: _stories.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
@@ -111,10 +111,20 @@ class listView_popular extends StatelessWidget {
               ),
             ),
             ),
-            Text(story['title']!,
-                style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-            Text(story['description']!),
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Text(story['title']!,
+                  style:
+                      const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Text(story['description']!,
+              style:
+                      const TextStyle(fontSize: 12,
+                      )),
+            ),
+            
           ],
         ),
       ),
