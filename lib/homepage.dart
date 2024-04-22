@@ -75,6 +75,7 @@ class _homepage extends State<homePage> {
 
                 //BUTTON TEXT SEE ALL NYA MOST POPULAR
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Align(
                       // alignment: Alignment.centerLeft,
@@ -88,9 +89,7 @@ class _homepage extends State<homePage> {
                       ),
                     ),
                     TextButton(
-                      child: const Padding(
-                        padding: EdgeInsets.only(left: 175),
-                        child: Align(
+                      child: const Align(
                           // alignment: Alignment.bottomRight,
                           child: Text(
                             'See All',
@@ -100,7 +99,6 @@ class _homepage extends State<homePage> {
                             ),
                           ),
                         ),
-                      ),
 
                       onPressed: () {
                         // pindah ke halaman SecondPage
@@ -138,7 +136,7 @@ class _homepage extends State<homePage> {
 
                 //BUTTON TEXT SEE ALL NYA MEAL DEALS
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Align(
                       // alignment: Alignment.centerLeft,
@@ -152,9 +150,7 @@ class _homepage extends State<homePage> {
                       ),
                     ),
                     TextButton(
-                      child: const Padding(
-                        padding: EdgeInsets.only(left: 200),
-                        child: Align(
+                        child: const Align(
                           alignment: Alignment.bottomRight,
                           child: Text(
                             'See All',
@@ -164,7 +160,6 @@ class _homepage extends State<homePage> {
                             ),
                           ),
                         ),
-                      ),
                       onPressed: () {
                         Navigator.push(
                             context,

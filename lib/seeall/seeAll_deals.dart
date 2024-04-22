@@ -19,6 +19,19 @@ class seeAll_deals extends StatelessWidget {
     'subtext': 'Berries are small, pulpy, and often edible fruits. Typically, berries are juicy, rounded, brightly colored, sweet, sour or tart, and do not have a stone or pit, although many pips or seeds may be present.'},
     {'image': 'lib/assets/11.jpg', 'text': 'Deals Six', 
     'subtext': 'Shrimp are usually cooked until they turn pink and are no longer translucent1. They are a great source of protein and can be prepared in a variety of ways.'},
+    {'image': 'lib/assets/18.jpeg', 'text': 'Deals Seven', 
+    'subtext': 'A layered dessert made of filo pastry sheets, filled with chopped nuts, and sweetened with syrup or honey. It’s popular in many Middle Eastern and Mediterranean countries.'},
+    {'image': 'lib/assets/19.jpeg', 'text': 'Deals Eight', 
+    'subtext': 'A Japanese dish where seafood, vegetables, or sushi are lightly battered and deep fried to create a light, crispy coating.'},
+    {'image': 'lib/assets/20.jpeg', 'text': 'Deals Nain', 
+    'subtext': 'A Japanese BBQ dish where beef is marinated, then grilled over an open flame. The term “yakiniku” refers to the grilling process and can apply to any cut or breed of cow.'},
+    {'image': 'lib/assets/21.jpeg', 'text': 'Deals Ten', 
+    'subtext': 'Sushi is a Japanese dish featuring specially prepared rice and usually some type of fish or seafood, often raw, but sometimes cooked1. The word “sushi” refers to the sour flavor of the vinegared rice1. The rice is so important that sushi chefs in Japan undergo years of training just to learn how to cook the rice properly1. There are two main types of sushi—nigiri and maki.'},
+    {'image': 'lib/assets/22.jpeg', 'text': 'Deals Eleven', 
+    'subtext': 'Chicken curry is a traditional Indian dish made by simmering chicken pieces with plenty of spices, herbs, onions, and tomatoes6. It is believed to have originated in India & now made and enjoyed all over the world6. Indian chicken curry typically starts with whole spices, heated in oil.'},
+    {'image': 'lib/assets/23.jpeg', 'text': 'Deals Tuelv', 
+    'subtext': 'Unagi the Japanese word for freshwater eel, is an elongated fatty fish, rich and bold in flavor7. Different than anago, its saltwater cousin, unagi is widely used in Asian cuisines and can never be eaten raw, as eel blood has toxins in it that can kill all animals.'},
+
   ];
 
   @override

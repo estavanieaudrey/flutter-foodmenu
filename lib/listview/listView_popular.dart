@@ -31,7 +31,36 @@ class listView_popular extends StatelessWidget {
       'title': 'Ramen',
       'description': 'si paling jepang'
     },
-    // Tambahkan data lainnya di sini
+    {
+      'image': 'lib/assets/12.jpeg',
+      'title': 'Sharmawa',
+      'description': 'si paling ayam'
+    },
+    {
+      'image': 'lib/assets/13.jpeg',
+      'title': 'Mansaf',
+      'description': 'si paling kambing'
+    },
+    {
+      'image': 'lib/assets/14.jpeg',
+      'title': 'Mandi Rice',
+      'description': 'si paling nasi'
+    },
+    {
+      'image': 'lib/assets/15.jpeg',
+      'title': 'Manaeesh',
+      'description': 'si paling maniiiss'
+    },
+    {
+      'image': 'lib/assets/16.jpeg',
+      'title': 'Kabsa',
+      'description': 'si paling indian'
+    },
+    {
+      'image': 'lib/assets/17.jpeg',
+      'title': 'Cheese Fatayer',
+      'description': 'si paling keju'
+    },
   ];
 
   @override

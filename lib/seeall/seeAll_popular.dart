@@ -17,6 +17,19 @@ class seeAll_popular extends StatelessWidget {
     'subtext': 'A salad is a dish consisting of mixed pieces of food, usually vegetables or fruits; however, different varieties can contain virtually any type of food. Salads are typically served at room temperature or chilled.'},
     {'image': 'lib/assets/5.jpg', 'text': 'Ramen', 
     'subtext': 'Ramen is a Japanese dish with Chinese origins. It consists of Chinese-style wheat noodles served in a meat or fish-based broth, often flavored with soy sauce or miso, and uses toppings such as sliced pork, nori (dried seaweed), and scallions.'},
+    {'image': 'lib/assets/12.jpeg', 'text': 'Chicken Sharwama', 
+    'subtext': 'A Middle Eastern dish where chicken is marinated in a variety of spices, then grilled or roasted. The cooked chicken is usually wrapped in a flatbread like pita and served with vegetables, pickles, and a garlic yogurt sauce.'},
+    {'image': 'lib/assets/13.jpeg', 'text': 'Mansaf', 
+    'subtext': 'A traditional Levantine dish made of lamb cooked in a sauce of fermented dried yogurt and served with rice or bulgur. It’s considered the national dish of Jordan.'},
+    {'image': 'lib/assets/14.jpeg', 'text': 'Mandi rice', 
+    'subtext': 'A traditional Yemeni dish where meat (commonly chicken or lamb) and rice are cooked together in a spiced broth. The dish is known for its unique flavor profile, which comes from the meat’s juices seeping into the rice during cooking.'},
+    {'image': 'lib/assets/15.jpeg', 'text': 'Manaeesh', 
+    'subtext': 'A Lebanese flatbread typically found in bakeries. It can be topped with a variety of ingredients, but a common version is topped with zaatar (a mix of thyme, sesame seeds, and sumac) or cheese.'},
+    {'image': 'lib/assets/16.jpeg', 'text': 'Kabsa', 
+    'subtext': 'A rice dish enjoyed throughout the Gulf States of the Arabian Peninsula. It’s heavily influenced by Persian and Indian biryanis, and involves cooking spiced, long-grain rice in the water that was used for cooking fish or meat.'},
+    {'image': 'lib/assets/17.jpeg', 'text': 'Cheese Fatayer', 
+    'subtext': 'Small savory cheese pies, typically found in bakeries. The cheese filling is often combined with other ingredients like spinach or meat. The dough is then folded over the filling and baked.'},
+
   ];
 
   @override

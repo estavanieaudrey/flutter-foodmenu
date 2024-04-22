@@ -48,6 +48,12 @@ class listView_deals extends StatelessWidget {
     {'image': 'lib/assets/9.jpg', 'title': 'Deals For', 'description': 'si paling dessert'},
     {'image': 'lib/assets/10.jpg', 'title': 'Deals Fiv', 'description': 'si paling berries'},
     {'image': 'lib/assets/11.jpg', 'title': 'Deals Six', 'description': 'si paling western'},
+    {'image': 'lib/assets/18.jpeg', 'title': 'Deals Seven', 'description': 'si paling indian food'},
+    {'image': 'lib/assets/19.jpeg', 'title': 'Deals Eight', 'description': 'si paling tempura'},
+    {'image': 'lib/assets/20.jpeg', 'title': 'Deals Nain', 'description': 'si paling beef'},
+    {'image': 'lib/assets/21.jpeg', 'title': 'Deals Ten', 'description': 'si paling sushi'},
+    {'image': 'lib/assets/22.jpeg', 'title': 'Deals Eleven', 'description': 'si paling kari fuudd'},
+    {'image': 'lib/assets/23.jpeg', 'title': 'Deals Tuelv', 'description': 'si paling ikan mahal'},
     // Tambahkan data lainnya di sini
   ];
 

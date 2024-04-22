@@ -56,7 +56,7 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicator> {
         }).toList(),
         carouselController: _controller,
         options: CarouselOptions(
-            height: 300,
+            height: 200,
             autoPlay: true,
             enlargeCenterPage: true,
             onPageChanged: (index, reason) {
@@ -71,8 +71,8 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicator> {
           return GestureDetector(
             onTap: () => _controller.animateToPage(entry.key),
             child: Container(
-              width: 6.0,
-              height: 6.0,
+              width: 9.0,
+              height: 7.0,
               margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
