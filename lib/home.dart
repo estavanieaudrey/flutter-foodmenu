@@ -15,16 +15,15 @@ class Stater extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.black),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
           title: const Text(
             "McAudrey Menu",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
           ),
         ),
-        // body: const Column(
-        //   children: [
-
-        //   ],
-        // ),
 
         //MENU PALING BAWAH
         bottomNavigationBar: const Column(
@@ -42,39 +41,28 @@ class Stater extends StatelessWidget {
               ),
             ),
             TabBar(
+              indicatorColor: Colors.blue,
+              unselectedLabelColor:
+                  Colors.black, // Warna ikon saat tab tidak aktif
+              labelColor: Colors.blue, // Warna ikon saat tab aktif
               tabs: [
                 Tab(
-                  icon: Icon(
-                    Icons.home_outlined,
-                    color: Colors.black,
-                  ),
+                  icon: Icon(Icons.home_outlined),
                 ),
                 Tab(
-                  icon: Icon(
-                    Icons.location_on_outlined,
-                    color: Colors.black,
-                  ),
+                  icon: Icon(Icons.location_on_outlined),
                 ),
                 Tab(
-                  icon: Icon(
-                    Icons.bookmark_border_outlined,
-                    color: Colors.black,
-                  ),
+                  icon: Icon(Icons.bookmark_border_outlined),
                 ),
                 Tab(
-                  icon: Icon(
-                    Icons.emoji_events_outlined,
-                    color: Colors.black,
-                  ),
+                  icon: Icon(Icons.emoji_events_outlined),
                 ),
                 Tab(
-                  icon: Icon(
-                    Icons.person_4_outlined,
-                    color: Colors.black,
-                  ),
+                  icon: Icon(Icons.person_4_outlined),
                 ),
               ],
-            ),
+            )
           ],
         ),
       ),

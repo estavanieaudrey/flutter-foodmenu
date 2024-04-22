@@ -70,24 +70,32 @@ class listView_deals extends StatelessWidget {
   }
 
   Widget storyCard(Map<String, String> story) {
-    return Container(
-      width: 150,
-      child: Column(
-        mainAxisSize: MainAxisSize.min, // untuk batasi ukuran
-        children: [
-          Expanded( // Menggunakan widget Expanded
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image.asset(story['image']!, fit: BoxFit.cover),
+    return Card(
+      child: Container(
+        width: 150,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisSize: MainAxisSize.min, // untuk batasi ukuran
+          children: [
+            Expanded(
+              // Menggunakan widget Expanded
+              child: ClipRRect(
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(15),
+                  topRight: Radius.circular(15),
+                ),
+                child: AspectRatio(
+                  aspectRatio: 1.2,
+                child: Image.asset(story['image']!, fit: BoxFit.cover),
+              ),
             ),
-          ),
-          Text(story['title']!, 
-          style: const TextStyle(
-            fontSize: 20, 
-            fontWeight: FontWeight.bold)
             ),
-          Text(story['description']!),
-        ],
+            Text(story['title']!,
+                style:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            Text(story['description']!),
+          ],
+        ),
       ),
     );
   }

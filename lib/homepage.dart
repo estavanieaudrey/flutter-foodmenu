@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -7,6 +6,7 @@ import 'package:uts_ambw/listview/listView_deals.dart';
 import 'package:uts_ambw/seeall/seeAll_deals.dart';
 import 'package:uts_ambw/seeall/seeAll_popular.dart';
 import 'listview/listView_popular.dart';
+import 'carousel.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});
@@ -59,51 +59,7 @@ class _homepage extends State<homePage> {
                 ),
 
                 //CAROUSEL
-                CarouselSlider(
-                    //items : arraynya diganti path gambar
-                    items: [
-                      {'image': 'lib/assets/1.jpg', 'title': 'Steak'},
-                      {'image': 'lib/assets/2.jpg', 'title': 'Burger'},
-                      {'image': 'lib/assets/3.jpg', 'title': 'Pasta'},
-                      {'image': 'lib/assets/4.jpg', 'title': 'Salad'},
-                      {'image': 'lib/assets/5.jpg', 'title': 'Ramen'}
-                    ].map((i) {
-                      return Builder(builder: (BuildContext context) {
-                        return Padding(
-                          padding: const EdgeInsets.only(top: 10),
-                          child: Container(
-                              width: 300,
-                              margin:
-                                  const EdgeInsets.symmetric(horizontal: 5.0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                image: DecorationImage(
-                                  image: AssetImage(i['image']!),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-
-                              //ini untuk text
-                              child: Align(
-                                alignment: Alignment.bottomLeft,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(
-                                      left: 20.0, bottom: 10.0),
-                                  child: Text(
-                                    // "Food ${i.split('/').last}",
-                                    i['title']!,
-                                    style: const TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 245, 237, 220),
-                                    ),
-                                  ),
-                                ),
-                              )),
-                        );
-                      });
-                    }).toList(),
-                    options: CarouselOptions(height: 180)),
+                CarouselWithIndicator(),
 
                 //TEXT MOST POPULAR
                 // const Align(
@@ -133,9 +89,9 @@ class _homepage extends State<homePage> {
                     ),
                     TextButton(
                       child: const Padding(
-                        padding: EdgeInsets.only(left: 180),
+                        padding: EdgeInsets.only(left: 175),
                         child: Align(
-                          alignment: Alignment.bottomRight,
+                          // alignment: Alignment.bottomRight,
                           child: Text(
                             'See All',
                             style: TextStyle(
@@ -145,6 +101,7 @@ class _homepage extends State<homePage> {
                           ),
                         ),
                       ),
+
                       onPressed: () {
                         // pindah ke halaman SecondPage
                         Navigator.push(
@@ -158,7 +115,13 @@ class _homepage extends State<homePage> {
                 ),
 
                 //LIST VIEW MOST POPULAR
+                // Row(
+                // mainAxisAlignment: MainAxisAlignment.center,
+                // children: [
                 listView_popular(),
+                // ]
+
+                // ),
 
                 //TEXT MEAL DEALS
                 // const Align(
@@ -175,6 +138,7 @@ class _homepage extends State<homePage> {
 
                 //BUTTON TEXT SEE ALL NYA MEAL DEALS
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Align(
                       // alignment: Alignment.centerLeft,
