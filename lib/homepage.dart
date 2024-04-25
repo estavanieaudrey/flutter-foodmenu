@@ -17,9 +17,19 @@ class homePage extends StatefulWidget {
 
 class _homepage extends State<homePage> {
   final _textController = TextEditingController();
+
   String userPost = '';
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double mp = 0.0;
+    if (screenWidth >= 1000 && screenWidth < 1300) {
+      mp = 150.0;
+    } else if (screenWidth >= 1300) {
+      mp = 300.0;
+    } else if (screenWidth < 1000) {
+      mp = 0.0;
+    }
     return Padding(
       padding: const EdgeInsets.only(top: 100),
       child: SingleChildScrollView(
@@ -62,117 +72,106 @@ class _homepage extends State<homePage> {
                 CarouselWithIndicator(),
 
                 //TEXT MOST POPULAR
-                // const Align(
-                //   alignment: Alignment.centerLeft,
-                //   child: Padding(
-                //     padding: EdgeInsets.only(top: 10, left: 20),
-                //     child: Text(
-                //       "Most Popular",
-                //       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                //     ),
-                //   ),
-                // ),
-
                 //BUTTON TEXT SEE ALL NYA MOST POPULAR
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Align(
-                      // alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 20),
-                        child: Text(
-                          "Most Popular",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                    TextButton(
-                      child: const Align(
-                          // alignment: Alignment.bottomRight,
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: mp),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Align(
+                        // alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 20),
                           child: Text(
-                            'See All',
+                            "Most Popular",
                             style: TextStyle(
-                              color: Color.fromARGB(255, 0, 121, 137),
-                              fontSize: 15,
-                            ),
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
-
-                      onPressed: () {
-                        // pindah ke halaman SecondPage
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => seeAll_popular()));
-                      },
-                      // color: Colors.green,
-                    ),
-                  ],
+                      ),
+                      TextButton(
+                        child: const Align(
+                            // alignment: Alignment.bottomRight,
+                            child: Text(
+                              'See All',
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 121, 137),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                  
+                        onPressed: () {
+                          // pindah ke halaman SecondPage
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => seeAll_popular()));
+                        },
+                        // color: Colors.green,
+                      ),
+                    ],
+                  ),
                 ),
 
                 //LIST VIEW MOST POPULAR
                 // Row(
                 // mainAxisAlignment: MainAxisAlignment.center,
                 // children: [
-                listView_popular(),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: mp),
+                  child: listView_popular(),
+                ),
                 // ]
 
                 // ),
 
                 //TEXT MEAL DEALS
-                // const Align(
-                //   alignment: Alignment.centerLeft,
-                //   child: Padding(
-                //     padding: EdgeInsets.only(top: 10, left: 20),
-                //     child: Text(
-                //       "Meal Deals",
-                //       style:
-                //           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                //     ),
-                //   ),
-                // ),
-
                 //BUTTON TEXT SEE ALL NYA MEAL DEALS
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Align(
-                      // alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 20),
-                        child: Text(
-                          "Best Deals!",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                    TextButton(
-                        child: const Align(
-                          alignment: Alignment.bottomRight,
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: mp),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Align(
+                        // alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 20),
                           child: Text(
-                            'See All',
+                            "Best Deals!",
                             style: TextStyle(
-                              color: Color.fromARGB(255, 0, 121, 137),
-                              fontSize: 15,
-                            ),
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => seeAll_deals()));
-                      },
-                      // color: Colors.green,
-                    ),
-                  ],
+                      ),
+                      TextButton(
+                          child: const Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text(
+                              'See All',
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 121, 137),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => seeAll_deals()));
+                        },
+                        // color: Colors.green,
+                      ),
+                    ],
+                  ),
                 ),
 
                 //LIST VIEW MEAL DEALS
-                listView_deals(),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: mp),
+                  child: listView_deals(),
+                ),
               ],
             ),
           ),
