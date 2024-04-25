@@ -61,6 +61,16 @@ class listView_popular extends StatelessWidget {
       'title': 'Cheese Fatayer',
       'description': 'si paling keju'
     },
+    {
+      'image': 'lib/assets/24.jpeg',
+      'title': 'Hummus',
+      'description': 'si paling indian'
+    },
+    {
+      'image': 'lib/assets/25.jpeg',
+      'title': 'Luqaimat',
+      'description': 'si paling keju'
+    },
   ];
 
   @override

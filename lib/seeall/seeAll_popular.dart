@@ -29,7 +29,10 @@ class seeAll_popular extends StatelessWidget {
     'subtext': 'A rice dish enjoyed throughout the Gulf States of the Arabian Peninsula. It’s heavily influenced by Persian and Indian biryanis, and involves cooking spiced, long-grain rice in the water that was used for cooking fish or meat.'},
     {'image': 'lib/assets/17.jpeg', 'text': 'Cheese Fatayer', 
     'subtext': 'Small savory cheese pies, typically found in bakeries. The cheese filling is often combined with other ingredients like spinach or meat. The dough is then folded over the filling and baked.'},
-
+    {'image': 'lib/assets/24.jpeg', 'text': 'Hummus', 
+    'subtext': 'Hummus is a Middle Eastern dip, spread, or savory dish made from cooked, mashed chickpeas blended with tahini, lemon juice, and garlic. The standard garnish in the Middle East includes olive oil, a few whole chickpeas, parsley, and paprika.'},
+    {'image': 'lib/assets/25.jpeg', 'text': 'Luqaimat', 
+    'subtext': 'Luqaimat are sweet dumplings that originate from the Middle East6. They are made of flour, yeast, cardamom and saffron, and are deep-fried till they are a nice golden color. These balls of delight are crunchy on the outside and soft and airy on the inside'},
   ];
 
   @override
